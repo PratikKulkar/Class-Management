@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="Anchor" prefHeight="169.0" prefWidth="365.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="music.AutheticationController">
+   <children>
+      <Label fx:id="otherlab" layoutX="30.0" layoutY="29.0" text="Username" textFill="#a0a3ab">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="otherlab" layoutX="30.0" layoutY="77.0" text="Password" textFill="#a0a3ab">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="admin" layoutX="122.0" layoutY="29.0" text="admin" textFill="#040211">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Button layoutX="122.0" layoutY="115.0" mnemonicParsing="false" onAction="#authenticate" onKeyPressed="#handle" prefHeight="30.0" prefWidth="70.0" text="Login">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <PasswordField fx:id="password" layoutX="122.0" layoutY="72.0" onKeyPressed="#handle" promptText="Password">
+         <font>
+            <Font size="14.0" />
+         </font></PasswordField>
+   </children>
+   <stylesheets>
+      <URL value="@../CSS/button.css" />
+      <URL value="@../CSS/label.css" />
+      <URL value="@../CSS/textbox.css" />
+   </stylesheets>
+</AnchorPane>

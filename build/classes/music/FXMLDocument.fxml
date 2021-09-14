@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+<?import java.io.*?>
+
+<AnchorPane fx:id="Anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="718.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="music.DocumentController">
+    <children>
+      <HBox>
+         <children>
+            <MenuBar fx:id="menu" prefHeight="30.0" prefWidth="717.0" stylesheets="@../CSS/Menu.css">
+              <menus>
+                <Menu fx:id="File" mnemonicParsing="false" text="_File">
+                  <items>
+                    <MenuItem fx:id="search" mnemonicParsing="false" onAction="#search" text="Search " />
+                        <MenuItem fx:id="atten" mnemonicParsing="false" onAction="#att" text="Attendence" />
+                        <MenuItem fx:id="atten1" mnemonicParsing="false" onAction="#Send" text="Send Message" />
+                        <MenuItem mnemonicParsing="false" onAction="#expense" text="Expenditure" />
+                        <MenuItem mnemonicParsing="false" onAction="#close" text="Exit" />
+                  </items>
+                </Menu>
+                <Menu fx:id="Edit" mnemonicParsing="false" text="_Edit">
+                  <items>
+                    <MenuItem fx:id="payFee" mnemonicParsing="false" onAction="#payFees" text="Pay fees" />
+                        <MenuItem mnemonicParsing="false" onAction="#DeleteStudent" text="Delete Student Info" />
+                        <MenuItem mnemonicParsing="false" onAction="#expenseS" text="Expenditure Serach" />
+                        <MenuItem mnemonicParsing="false" onAction="#tsearch" text="Transaction Search" />
+                        <MenuItem mnemonicParsing="false" onAction="#attS" text="Attendence Search" />
+                        <MenuItem mnemonicParsing="false" onAction="#delinfo" text="Delete Information" />
+                  </items>
+                </Menu>
+                <Menu fx:id="Help" mnemonicParsing="false" text="_Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu> 
+              </menus>
+            </MenuBar>
+         </children>
+      </HBox>
+      <TextField fx:id="name" layoutX="139.0" layoutY="117.0" onKeyPressed="#handle" prefHeight="25.0" prefWidth="177.0" promptText="Student name here" stylesheets="@../CSS/textbox.css" />
+      <TextField fx:id="phn_no" layoutX="139.0" layoutY="173.0" onKeyPressed="#handle" prefHeight="25.0" prefWidth="177.0" promptText="Phone number" />
+      <TextArea fx:id="add" layoutX="411.0" layoutY="181.0" onKeyPressed="#handle" prefHeight="200.0" prefWidth="200.0" promptText="Address Here " />
+      <DatePicker fx:id="admsn_date" layoutX="139.0" layoutY="230.0" onAction="#nextFD" onKeyPressed="#handle" prefHeight="25.0" prefWidth="177.0" promptText="Admisson Date here" stylesheets="@../CSS/datepicker.css" />
+      <Button fx:id="submit" layoutX="327.0" layoutY="440.0" mnemonicParsing="false" onAction="#submit" onKeyPressed="#handle" stylesheets="@../CSS/button.css" text="Submit" />
+      <DatePicker fx:id="fee_date" layoutX="139.0" layoutY="295.0" onKeyPressed="#handle" prefHeight="25.0" prefWidth="177.0" promptText="Next Fee Date" stylesheets="@../CSS/datepicker.css" />
+      <ComboBox fx:id="course" layoutX="139.0" layoutY="351.0" onAction="#fees" onKeyPressed="#handle" prefHeight="30.0" prefWidth="177.0" promptText="Course" stylesheets="@../CSS/combo.css" />
+      <TextField fx:id="fp" layoutX="411.0" layoutY="117.0" onKeyPressed="#handle" prefHeight="25.0" prefWidth="200.0" promptText="Fees to be paid" />
+      <ImageView fitHeight="69.0" fitWidth="87.0" layoutX="331.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="img/Student Registration.png" />  
+        </image> 
+      </ImageView>
+      <Label fx:id="file" layoutX="260.5" layoutY="400.0" stylesheets="@../CSS/label.css"></Label>
+      <Button fx:id="Click" layoutX="360.0" layoutY="400.0" stylesheets="@../CSS/button.css" prefHeight="10" prefWidth="75" onAction="#camera"></Button>
+   </children>
+   <stylesheets>
+      <URL value="@../CSS/textbox.css" />
+   </stylesheets>
+</AnchorPane>

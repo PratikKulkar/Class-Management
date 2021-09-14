@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+
+<AnchorPane fx:id="Anchor" prefHeight="723.0" prefWidth="1451.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="music.SearchController">
+       <children>
+      <TableView fx:id="table" layoutX="7.0" layoutY="251.0" stylesheets="@../CSS/tableview.css">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="171.0" text="Name" />
+          <TableColumn fx:id="phnno" prefWidth="134.0" text="Phone no " />
+            <TableColumn fx:id="add" prefWidth="258.0" text="Address" />
+            <TableColumn fx:id="admsnDate" prefWidth="153.0" text="Admission Date" />
+            <TableColumn fx:id="nextFD" prefWidth="147.0" text="Next Fee Date" />
+            <TableColumn fx:id="prev_date" prefWidth="144.0" text="Previous date" />
+            <TableColumn fx:id="course" prefWidth="171.0" text="Course" />
+            <TableColumn fx:id="Fee" prefWidth="171.0" text=" Fees" />
+        </columns>
+      </TableView>
+      <Button fx:id="b1" layoutX="190.0" layoutY="101.0" mnemonicParsing="false" onAction="#display" onKeyPressed="#handle" text="Unique Serach" />
+      <TextField fx:id="s_phnno" layoutX="14.0" layoutY="101.0" onKeyPressed="#handle" prefHeight="25.0" prefWidth="150.0" promptText="Phone Number" />
+      <Label fx:id="otherlab" layoutX="14.0" layoutY="72.0" text="Unique search" />
+      <Label fx:id="otherlab" layoutX="14.0" layoutY="157.0" text="Search Using Other Parameters" />
+      <DatePicker fx:id="s_date" layoutX="190.0" layoutY="196.0" onKeyPressed="#handle2" promptText="Select date" />
+      <ComboBox fx:id="s_course" layoutX="14.0" layoutY="196.0" onKeyPressed="#handle2" prefWidth="150.0" promptText="Course" />
+      <Button fx:id="p_search" layoutX="630.0" layoutY="196.0" mnemonicParsing="false" onAction="#oParamSearch" onKeyPressed="#handle2" text="Search" />
+      <TextField fx:id="s_name" layoutX="417.0" layoutY="196.0" onKeyPressed="#handle2" promptText="search by using name" />
+      <Label fx:id="dateD" layoutX="1079.0" layoutY="19.0" text="Time" />
+      <MenuBar prefHeight="29.0" prefWidth="1514.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="_File">
+               <items>
+                  <MenuItem fx:id="search" mnemonicParsing="false" onAction="#serach" text="Main menu" />
+                  <MenuItem fx:id="search1" mnemonicParsing="false" onAction="#att" text="Attendence" />
+                  <MenuItem fx:id="search2" mnemonicParsing="false" onAction="#send" text="Send Message" />
+                  <MenuItem mnemonicParsing="false" onAction="#expense" text="Expenditure" />
+                  <MenuItem mnemonicParsing="false" onAction="#hide" text="Exit" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="_Edit">
+               <items>
+                  <MenuItem fx:id="payFee" mnemonicParsing="false" onAction="#fees" text="Pay fees" />
+                  <MenuItem mnemonicParsing="false" onAction="#DeleteStudent" text="Delete Student Info" />
+                  <MenuItem fx:id="payFee1" mnemonicParsing="false" onAction="#expsearch" text="Expenditure Search" />
+                  <MenuItem fx:id="payFee11" mnemonicParsing="false" onAction="#trans" text="Transaction Search" />
+                  <MenuItem fx:id="payFee111" mnemonicParsing="false" onAction="#delinfo" text="Delete Information" />
+                  <MenuItem fx:id="payFee1111" mnemonicParsing="false" onAction="#attS" text="Attendence Search" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="_Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Label fx:id="c" layoutX="853.0" layoutY="201.0" prefHeight="15.0" prefWidth="94.0" text="Results Found" />
+      <Button layoutX="732.0" layoutY="196.0" mnemonicParsing="false" onAction="#searchAll" onKeyPressed="#handle1" text="Search All" />
+   </children>
+   <stylesheets>
+      <URL value="@../CSS/textbox.css" />
+      <URL value="@../CSS/button.css" />
+      <URL value="@../CSS/combo.css" />
+      <URL value="@../CSS/datepicker.css" />
+      <URL value="@../CSS/Menu.css" />
+      <URL value="@../CSS/label.css" />
+   </stylesheets>
+</AnchorPane>

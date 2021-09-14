@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="Anchor" prefHeight="540.0" prefWidth="782.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="music.ExpenditureController">
+   <children>
+      <MenuBar prefHeight="29.0" prefWidth="782.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="_File">
+               <items>
+                  <MenuItem fx:id="search" mnemonicParsing="false" onAction="#mainMenu" text="Main menu" />
+                  <MenuItem fx:id="search1" mnemonicParsing="false" onAction="#search" text="Search" />
+                  <MenuItem fx:id="search2" mnemonicParsing="false" onAction="#att" text="Attendence" />
+                  <MenuItem mnemonicParsing="false" onAction="#send" text="Send Message" />
+                  <MenuItem mnemonicParsing="false" onAction="#hide" text="Exit" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="_Edit">
+               <items>
+                  <MenuItem fx:id="payFee" mnemonicParsing="false" onAction="#fees" text="Pay fees" />
+                  <MenuItem fx:id="payFee1" mnemonicParsing="false" onAction="#expsearch" text="Expenditure Search" />
+                  <MenuItem fx:id="payFee11" mnemonicParsing="false" onAction="#trans" text="Transaction Search" />
+                  <MenuItem fx:id="payFee111" mnemonicParsing="false" onAction="#delinfo" text="Delete Information" />
+                  <MenuItem fx:id="payFee1111" mnemonicParsing="false" onAction="#attS" text="Attendence Search" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="_Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Label fx:id="otherlab" layoutX="30.0" layoutY="117.0" text="Expense on" />
+      <Label fx:id="otherlab" layoutX="291.0" layoutY="117.0" text="Date" />
+      <Label fx:id="otherlab" layoutX="546.0" layoutY="117.0" text="Cost" />
+      <DatePicker fx:id="date1" layoutX="291.0" layoutY="151.0" onKeyPressed="#handle" />
+      <DatePicker fx:id="date2" layoutX="291.0" layoutY="208.0" onKeyPressed="#handle" />
+      <DatePicker fx:id="date3" layoutX="292.0" layoutY="270.0" onKeyPressed="#handle" />
+      <DatePicker fx:id="date4" layoutX="291.0" layoutY="338.0" onKeyPressed="#handle" />
+      <TextField fx:id="e1" layoutX="30.0" layoutY="151.0" onKeyPressed="#date" prefHeight="25.0" prefWidth="198.0" />
+      <TextField fx:id="e2" layoutX="30.0" layoutY="208.0" onKeyPressed="#date" prefHeight="25.0" prefWidth="198.0" />
+      <TextField fx:id="e3" layoutX="30.0" layoutY="270.0" onKeyPressed="#date" prefHeight="25.0" prefWidth="198.0" />
+      <TextField fx:id="e4" layoutX="30.0" layoutY="338.0" onKeyPressed="#date" prefHeight="25.0" prefWidth="198.0" />
+      <TextField fx:id="c1" layoutX="546.0" layoutY="151.0" onKeyPressed="#handle" prefHeight="25.0" prefWidth="198.0" />
+      <TextField fx:id="c2" layoutX="546.0" layoutY="208.0" onKeyPressed="#handle" prefHeight="25.0" prefWidth="198.0" />
+      <TextField fx:id="c3" layoutX="546.0" layoutY="270.0" onKeyPressed="#handle" prefHeight="25.0" prefWidth="198.0" />
+      <TextField fx:id="c4" layoutX="546.0" layoutY="338.0" onKeyPressed="#handle" prefHeight="25.0" prefWidth="198.0" />
+      <Button layoutX="329.0" layoutY="422.0" mnemonicParsing="false" onAction="#submit" onKeyPressed="#handle" text="Submit" />
+   </children>
+   <stylesheets>
+      <URL value="@../CSS/textbox.css" />
+      <URL value="@../CSS/datepicker.css" />
+      <URL value="@../CSS/button.css" />
+      <URL value="@../CSS/label.css" />
+      <URL value="@../CSS/Menu.css" />
+   </stylesheets>
+</AnchorPane>

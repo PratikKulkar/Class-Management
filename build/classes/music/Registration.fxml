@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="Anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="375.0" prefWidth="600.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="music.RegistrationController">
+    <children>
+        <Label layoutX="256.0" layoutY="48.0" text="Register User" />
+        <TextField fx:id="username" layoutX="207.0" layoutY="137.0" onKeyPressed="#handle" prefHeight="30.0" prefWidth="229.0" promptText="Username for login" />
+        <PasswordField fx:id="password" layoutX="207.0" layoutY="188.0" onKeyPressed="#handle" prefHeight="30.0" prefWidth="229.0" promptText="Password" />
+        <PasswordField fx:id="repass" layoutX="207.0" layoutY="238.0" onKeyPressed="#handle" prefHeight="30.0" prefWidth="229.0" promptText="Re-enter Password" />
+        <Button layoutX="376.0" layoutY="304.0" mnemonicParsing="false" onAction="#delete" onKeyPressed="#handle1" text="Delete" />
+        <MenuBar prefHeight="29.0" prefWidth="600.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem fx:id="search" mnemonicParsing="false" onAction="#mainMenu" text="Main menu" />
+                        <MenuItem fx:id="search1" mnemonicParsing="false" onAction="#search" text="Search" />
+                        <MenuItem fx:id="search2" mnemonicParsing="false" onAction="#att" text="Attendence" />
+                        <MenuItem mnemonicParsing="false" onAction="#expense" text="Expenditure" />
+                        <MenuItem mnemonicParsing="false" onAction="#hide" text="Exit" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem fx:id="payFee" mnemonicParsing="false" onAction="#fees" text="Pay fees" />
+                        <MenuItem fx:id="payFee1" mnemonicParsing="false" onAction="#attS" text="Attendence Search" />
+                        <MenuItem fx:id="payFee12" mnemonicParsing="false" onAction="#DeleteStudent" text="Delete Student info" />
+                        <MenuItem fx:id="payFee11" mnemonicParsing="false" onAction="#trans" text="Transaction Search" />
+                        <MenuItem fx:id="payFee111" mnemonicParsing="false" onAction="#delinfo" text="Delete Information" />
+                        <MenuItem fx:id="payFee1111" mnemonicParsing="false" onAction="#expsearch" text="Expenditure Search" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <Button layoutX="207.0" layoutY="304.0" mnemonicParsing="false" onAction="#update" onKeyPressed="#handle" text="Update" />
+      <ImageView fitHeight="69.0" fitWidth="87.0" layoutX="278.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+      <image><Image url="img/Update.png" /></image>    
+      </ImageView>
+    </children>
+   <stylesheets>
+      <URL value="@../CSS/textbox.css" />
+      <URL value="@../CSS/button.css" />
+      <URL value="@../CSS/Menu.css" />
+   </stylesheets>
+</AnchorPane>

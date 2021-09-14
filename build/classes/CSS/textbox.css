@@ -1,0 +1,23 @@
+.text-field{
+    -fx-background-color: #151928;
+    -fx-text-fill: white;
+    -fx-font-size:14px;
+}
+
+.text-area{
+    -fx-background-color: #151928; 
+    -fx-text-fill: white;
+    -fx-font-size:14px;
+}
+
+.text-area .content{
+    -fx-background-color: #151928;
+}
+
+.text-field:hover{
+    -fx-border-color: #39CCCC;
+}
+
+.text-area:hover{
+    -fx-border-color: #39CCCC;
+}

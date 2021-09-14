@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="Anchor" prefHeight="435.0" prefWidth="713.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="music.AttendenceController">
+   <children>
+      <Label fx:id="otherlab" layoutX="31.0" layoutY="89.0" prefHeight="15.0" prefWidth="171.0" text="Course" />
+      <Label fx:id="otherlab" layoutX="231.0" layoutY="89.0" prefHeight="15.0" prefWidth="171.0" text="Name" />
+      <TextField fx:id="name1" layoutX="231.0" layoutY="132.0" onAction="#string" onKeyPressed="#handle" />
+      <DatePicker fx:id="date1" layoutX="431.0" layoutY="132.0" onKeyPressed="#handle" />
+      <Label fx:id="otherlab" layoutX="431.0" layoutY="89.0" prefHeight="15.0" prefWidth="198.0" text="Attendence Date" />
+      <TextField fx:id="name2" layoutX="231.0" layoutY="190.0" onAction="#string" onKeyPressed="#handle" />
+      <TextField fx:id="name3" layoutX="231.0" layoutY="244.0" onKeyReleased="#handle" />
+      <TextField fx:id="name4" layoutX="231.0" layoutY="303.0" onKeyReleased="#handle" />
+      <DatePicker fx:id="date2" layoutX="431.0" layoutY="190.0" onKeyPressed="#handle" />
+      <DatePicker fx:id="date3" layoutX="431.0" layoutY="244.0" onKeyPressed="#handle" />
+      <DatePicker fx:id="date4" layoutX="431.0" layoutY="303.0" onKeyPressed="#handle" />
+      <Button layoutX="225.0" layoutY="371.0" mnemonicParsing="false" onAction="#submit" onKeyPressed="#handle" text="Attendence" />
+      <ComboBox fx:id="c1" layoutX="31.0" layoutY="132.0" onAction="#string" onKeyPressed="#handle" prefHeight="25.0" prefWidth="161.0" />
+      <ComboBox fx:id="c2" layoutX="31.0" layoutY="190.0" onAction="#string" onKeyPressed="#handle" prefHeight="25.0" prefWidth="161.0" />
+      <ComboBox fx:id="c3" layoutX="31.0" layoutY="244.0" onAction="#string" onKeyPressed="#handle" prefHeight="25.0" prefWidth="161.0" />
+      <ComboBox fx:id="c4" layoutX="31.0" layoutY="303.0" onAction="#string" onKeyPressed="#handle" prefHeight="25.0" prefWidth="161.0" />
+      <MenuBar prefHeight="29.0" prefWidth="713.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="_File">
+               <items>
+                  <MenuItem fx:id="mainMenu" mnemonicParsing="false" onAction="#mainMenu" text="Main menu" />
+                  <MenuItem fx:id="search1" mnemonicParsing="false" onAction="#search" text="Search" />
+                  <MenuItem mnemonicParsing="false" onAction="#send" text="Send Message" />
+                  <MenuItem mnemonicParsing="false" onAction="#att" text="Attendence" />
+                  <MenuItem mnemonicParsing="false" onAction="#expense" text="Expenditure" />
+                  <MenuItem mnemonicParsing="false" onAction="#hide" text="Exit" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="_Edit">
+               <items>
+                  <MenuItem fx:id="payFee" mnemonicParsing="false" onAction="#fees" text="Pay fees" />
+                  <MenuItem mnemonicParsing="false" onAction="#DeleteStudent" text="Delete Student Info" />
+                  <MenuItem fx:id="payFee1" mnemonicParsing="false" onAction="#expsearch" text="Expenditure Search" />
+                  <MenuItem fx:id="payFee11" mnemonicParsing="false" onAction="#trans" text="Transaction Search" />
+                  <MenuItem fx:id="payFee111" mnemonicParsing="false" onAction="#delinfo" text="Delete Information" />
+                  <MenuItem fx:id="payFee1111" mnemonicParsing="false" onAction="#attS" text="Attendence Search" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="_Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Button layoutX="402.0" layoutY="371.0" mnemonicParsing="false" onAction="#clear" onKeyPressed="#handle" prefHeight="30.0" prefWidth="92.0" text="Reset" />
+   </children>
+   <stylesheets>
+      <URL value="@../CSS/button.css" />
+      <URL value="@../CSS/combo.css" />
+      <URL value="@../CSS/textbox.css" />
+      <URL value="@../CSS/datepicker.css" />
+      <URL value="@../CSS/Menu.css" />
+      <URL value="@../CSS/label.css" />
+   </stylesheets>
+</AnchorPane>

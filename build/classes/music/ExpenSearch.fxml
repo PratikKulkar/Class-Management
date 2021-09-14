@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="Anchor" prefHeight="515.0" prefWidth="828.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="music.ExpenSearchController">
+   <children>
+      <DatePicker fx:id="s_date" layoutX="14.0" layoutY="62.0" onKeyPressed="#handle" promptText="Date Search" />
+      <TextField fx:id="s_expense" layoutX="236.0" layoutY="62.0" onKeyReleased="#handle" prefHeight="25.0" prefWidth="198.0" promptText="Expense on search" />
+      <TextField fx:id="s_cost" layoutX="457.0" layoutY="62.0" onKeyReleased="#handle" prefHeight="25.0" prefWidth="198.0" promptText="Cost search" />
+      <Button layoutX="666.0" layoutY="62.0" mnemonicParsing="false" onAction="#find" onKeyPressed="#handle" text="Search" />
+      <TableView fx:id="table" layoutX="90.0" layoutY="156.0" prefHeight="302.0" prefWidth="649.0">
+        <columns>
+          <TableColumn fx:id="Date" prefWidth="220.0" text="Date" />
+          <TableColumn fx:id="Expense" prefWidth="223.0" text="Expense on" />
+            <TableColumn fx:id="cost" prefWidth="205.0" text="Cost " />
+        </columns>
+      </TableView>
+      <Label fx:id="otherlab" layoutX="14.0" layoutY="37.0" text="Parameters" />
+      <Button layoutX="736.0" layoutY="62.0" mnemonicParsing="false" onAction="#searchAll" onKeyPressed="#handle1" text="Seach All" />
+      <Label fx:id="otherlab" layoutX="411.0" layoutY="115.0" text="Results Found" />
+      <MenuBar fx:id="menu" layoutY="-1.0" prefHeight="30.0" prefWidth="828.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="_File">
+               <items>
+                  <MenuItem fx:id="search" mnemonicParsing="false" onAction="#mainMenu" text="Main Menu" />
+                  <MenuItem fx:id="search1" mnemonicParsing="false" onAction="#search" text="Search" />
+                  <MenuItem fx:id="atten" mnemonicParsing="false" onAction="#att" text="Attendence" />
+                  <MenuItem fx:id="atten1" mnemonicParsing="false" onAction="#Send" text="Send Message" />
+                  <MenuItem mnemonicParsing="false" onAction="#expense" text="Expenditure" />
+                  <MenuItem mnemonicParsing="false" onAction="#close" text="Exit" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="_Edit">
+               <items>
+                  <MenuItem fx:id="payFee" mnemonicParsing="false" onAction="#payFees" text="Pay fees" />
+                  <MenuItem mnemonicParsing="false" onAction="#DeleteStudent" text="Delete Student Info" />
+                  <MenuItem mnemonicParsing="false" onAction="#trans" text="Transaction Search" />
+                  <MenuItem mnemonicParsing="false" onAction="#delinfo" text="Delete Information" />
+                  <MenuItem mnemonicParsing="false" onAction="#attS" text="Attendence Search" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="_Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </children>
+   <stylesheets>
+      <URL value="@../CSS/textbox.css" />
+      <URL value="@../CSS/label.css" />
+      <URL value="@../CSS/tableview.css" />
+      <URL value="@../CSS/button.css" />
+      <URL value="@../CSS/Menu.css" />
+      <URL value="@../CSS/datepicker.css" />
+   </stylesheets>
+</AnchorPane>

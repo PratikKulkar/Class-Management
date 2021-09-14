@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="Anchor" prefHeight="340.0" prefWidth="564.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="music.LoginPageController">
+   <children>
+      <TextField fx:id="username" layoutX="181.0" layoutY="110.0" mouseTransparent="true" onAction="#submit" prefHeight="25.0" prefWidth="207.0" promptText="Username" style="-fx-background-color: #2D3447; -fx-text-fill: #FFFFFF;">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect></TextField>
+      <Button fx:id="login" layoutX="245.0" layoutY="213.0" mnemonicParsing="false" onAction="#submit" onKeyPressed="#handle" prefHeight="25.0" prefWidth="80.0" stylesheets="@../CSS/button.css" text="Login" textFill="#fdfdff">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Hyperlink layoutX="204.0" layoutY="279.0" onAction="#register" text="Forget Password/Delete user" />
+      <PasswordField fx:id="password" layoutX="181.0" layoutY="155.0" onAction="#submit" prefHeight="25.0" prefWidth="207.0" promptText="Password" style="-fx-background-color: #2D3447; -fx-text-fill: #FFFFFF;">
+         <font>
+            <Font size="14.0" />
+         </font></PasswordField>
+      <Button layoutX="452.0" layoutY="17.0" mnemonicParsing="false" onAction="#SignUp" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: #151928; -fx-border-color: #a0a2ab;" text="Sign Up" textFill="#a3a0ab">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="39.0" fitWidth="47.0" layoutX="133.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+              <Image url="img/Color icon.png" />
+          </image>       
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="47.0" layoutX="133.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+              <Image url="img/Password Icon.png" />
+          </image>
+      </ImageView>
+      <Label layoutX="245.0" layoutY="22.0" prefHeight="54.0" prefWidth="39.0" text="SS" textFill="#0c92eb">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="282.0" layoutY="22.0" prefHeight="54.0" prefWidth="39.0" text="M" textFill="WHITE">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

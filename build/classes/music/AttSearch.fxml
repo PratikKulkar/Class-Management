@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="Anchor" prefHeight="590.0" prefWidth="792.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="music.AttSearchController">
+   <children>
+      <MenuBar prefHeight="29.0" prefWidth="792.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="_File">
+               <items>
+                  <MenuItem fx:id="search" mnemonicParsing="false" onAction="#MainMenu" text="Main Menu " />
+                  <MenuItem fx:id="search1" mnemonicParsing="false" onAction="#search" text="Search " />
+                  <MenuItem fx:id="atten" mnemonicParsing="false" onAction="#att" text="Attendence" />
+                  <MenuItem mnemonicParsing="false" onAction="#send" text="Send Message" />
+                  <MenuItem mnemonicParsing="false" onAction="#expense" text="Expenditure" />
+                  <MenuItem mnemonicParsing="false" onAction="#close" text="Exit" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="_Edit">
+               <items>
+                  <MenuItem fx:id="payFee" mnemonicParsing="false" onAction="#payFees" text="Pay fees" />
+                  <MenuItem mnemonicParsing="false" onAction="#expsearch" text="Expenditure Search" />
+                  <MenuItem mnemonicParsing="false" onAction="#trans" text="Transaction Search" />
+                  <MenuItem mnemonicParsing="false" onAction="#delinfo" text="Delete Information" />
+                  <MenuItem mnemonicParsing="false" onAction="#DeleteStudent" text="Delete Student Info" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="_Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Label fx:id="otherlab" layoutX="16.0" layoutY="52.0" text="Parameters" />
+      <DatePicker fx:id="s_date" layoutX="16.0" layoutY="90.0" onKeyPressed="#handle" promptText="Date" />
+      <ComboBox fx:id="s_course" layoutX="240.0" layoutY="90.0" onKeyPressed="#handle" prefHeight="30.0" prefWidth="198.0" promptText="Course" />
+      <TextField fx:id="s_name" layoutX="470.0" layoutY="90.0" onKeyPressed="#handle" prefHeight="25.0" prefWidth="198.0" promptText="Student Name" />
+      <Button layoutX="690.0" layoutY="90.0" mnemonicParsing="false" onAction="#find" onKeyPressed="#handle" text="Search" />
+      <TableView fx:id="table" layoutX="16.0" layoutY="144.0">
+        <columns>
+          <TableColumn fx:id="Name" prefWidth="269.0" text="Name" />
+          <TableColumn fx:id="Course" minWidth="0.0" prefWidth="243.0" text="Course" />
+            <TableColumn fx:id="attDate" minWidth="0.0" prefWidth="246.0" text="Attendence Date" />
+        </columns>
+      </TableView>
+   </children>
+   <stylesheets>
+      <URL value="@../CSS/tableview.css" />
+      <URL value="@../CSS/textbox.css" />
+      <URL value="@../CSS/combo.css" />
+      <URL value="@../CSS/button.css" />
+      <URL value="@../CSS/Menu.css" />
+      <URL value="@../CSS/label.css" />
+      <URL value="@../CSS/datepicker.css" />
+   </stylesheets>
+</AnchorPane>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="Anchor" prefHeight="519.0" prefWidth="683.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="music.InformationController">
+   <children>
+      <TableView fx:id="table" layoutX="40.0" layoutY="171.0" prefHeight="293.0" prefWidth="630.0">
+        <columns>
+          <TableColumn fx:id="c1" prefWidth="178.0" text="c1" />
+          <TableColumn fx:id="c2" prefWidth="138.0" text="C2" />
+            <TableColumn fx:id="c3" prefWidth="129.0" text="C3" />
+            <TableColumn fx:id="c4" prefWidth="184.0" text="C2" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="month" layoutX="205.0" layoutY="105.0" onKeyPressed="#handle" prefWidth="150.0" promptText="Month" />
+      <ComboBox fx:id="year" layoutX="369.0" layoutY="105.0" onKeyPressed="#handle" prefWidth="150.0" promptText="Year" />
+      <Button layoutX="532.0" layoutY="105.0" mnemonicParsing="false" onAction="#search" onKeyPressed="#handle" text="Search" />
+      <Button layoutX="610.0" layoutY="105.0" mnemonicParsing="false" onAction="#delete" onKeyPressed="#handle1" text="Delete" />
+      <MenuBar prefHeight="29.0" prefWidth="778.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="_File">
+               <items>
+                  <MenuItem fx:id="search" mnemonicParsing="false" onAction="#mainMenu" text="Main menu" />
+                  <MenuItem mnemonicParsing="false" onAction="#find" text="Search " />
+                  <MenuItem fx:id="search1" mnemonicParsing="false" onAction="#att" text="Attendence" />
+                  <MenuItem fx:id="search2" mnemonicParsing="false" onAction="#send" text="Send Message" />
+                  <MenuItem mnemonicParsing="false" onAction="#expense" text="Expenditure" />
+                  <MenuItem mnemonicParsing="false" onAction="#hide" text="Exit" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="_Edit">
+               <items>
+                  <MenuItem fx:id="payFee" mnemonicParsing="false" onAction="#fees" text="Pay fees" />
+                  <MenuItem mnemonicParsing="false" onAction="#DeleteStudent" text="Delete Student Info" />
+                  <MenuItem fx:id="payFee1" mnemonicParsing="false" onAction="#expsearch" text="Expenditure Search" />
+                  <MenuItem fx:id="payFee11" mnemonicParsing="false" onAction="#trans" text="Transaction Search" />
+                  <MenuItem fx:id="payFee111" mnemonicParsing="false" onAction="#attS" text="Attendence Search" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="_Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <ComboBox fx:id="dbt" layoutX="40.0" layoutY="105.0" onAction="#set" onKeyPressed="#handle" prefWidth="150.0" promptText="Select Table" />
+   </children>
+   <stylesheets>
+      <URL value="@../CSS/combo.css" />
+      <URL value="@../CSS/button.css" />
+      <URL value="@../CSS/Menu.css" />
+      <URL value="@../CSS/tableview.css" />
+   </stylesheets>
+</AnchorPane>

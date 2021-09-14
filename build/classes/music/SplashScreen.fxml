@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="music.SplashScreenController">
+   <children>
+      <StackPane fx:id="rootPane" prefHeight="400.0" prefWidth="602.0" style="-fx-background-color: #2D3447;">
+         <children>
+            <Circle fx:id="c1" fill="#2d3447" radius="118.0" stroke="#39cccc" strokeType="INSIDE" strokeWidth="10.0" style="-fx-stroke-dash-array: 60;" />
+            <Circle fx:id="c2" fill="#2d3447" radius="82.0" stroke="#4a29e1" strokeType="INSIDE" strokeWidth="7.0" style="-fx-stroke-dash-array: 30;" />
+            <Circle fx:id="c3" fill="#2d3447" radius="34.0" stroke="#14a1ff" strokeType="INSIDE" strokeWidth="5.0" style="-fx-stroke-dash-array: 15;" />
+         </children>
+      </StackPane>
+   </children>
+</HBox>

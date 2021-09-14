@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="Anchor" prefHeight="474.0" prefWidth="702.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="music.SendMessageController">
+   <children>
+      <TextField fx:id="txtPhone" layoutX="272.0" layoutY="97.0" onKeyPressed="#handle" prefHeight="30.0" prefWidth="212.0" promptText="Phone Number" />
+      <Label fx:id="otherlab" layoutX="96.0" layoutY="102.0" text="Phone Number" />
+      <TextArea fx:id="txtMessage" layoutX="272.0" layoutY="167.0" onKeyPressed="#handle" prefHeight="200.0" prefWidth="212.0" promptText="Message here" />
+      <Label fx:id="otherlab" layoutX="96.0" layoutY="167.0" text="Message" />
+      <Button layoutX="272.0" layoutY="417.0" mnemonicParsing="false" onAction="#send" onKeyPressed="#handle" prefHeight="25.0" prefWidth="71.0" text="Send" />
+      <Button layoutX="412.0" layoutY="417.0" mnemonicParsing="false" onAction="#sendAll" onKeyPressed="#handle1" text="Send All" />
+      <MenuBar prefHeight="29.0" prefWidth="702.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="_File">
+               <items>
+                  <MenuItem fx:id="search" mnemonicParsing="false" onAction="#mainMenu" text="Main menu" />
+                  <MenuItem fx:id="search1" mnemonicParsing="false" onAction="#search" text="Search" />
+                  <MenuItem fx:id="search2" mnemonicParsing="false" onAction="#att" text="Attendence" />
+                  <MenuItem mnemonicParsing="false" onAction="#expense" text="Expenditure" />
+                  <MenuItem mnemonicParsing="false" onAction="#hide" text="Exit" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="_Edit">
+               <items>
+                  <MenuItem fx:id="payFee" mnemonicParsing="false" onAction="#fees" text="Pay fees" />
+                  <MenuItem fx:id="payFee1" mnemonicParsing="false" onAction="#attS" text="Attendence Search" />
+                  <MenuItem fx:id="payFee12" mnemonicParsing="false" onAction="#DeleteStudent" text="Delete Student info" />
+                  <MenuItem fx:id="payFee11" mnemonicParsing="false" onAction="#trans" text="Transaction Search" />
+                  <MenuItem fx:id="payFee111" mnemonicParsing="false" onAction="#delinfo" text="Delete Information" />
+                  <MenuItem fx:id="payFee1111" mnemonicParsing="false" onAction="#expsearch" text="Expenditure Search" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="_Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </children>
+   <stylesheets>
+      <URL value="@../CSS/button.css" />
+      <URL value="@../CSS/textbox.css" />
+      <URL value="@../CSS/Menu.css" />
+      <URL value="@../CSS/label.css" />
+   </stylesheets>
+</AnchorPane>
