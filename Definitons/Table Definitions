@@ -1,0 +1,27 @@
+Database name 'music'
+
+Test table
+CREATE TABLE `test` (
+	`phnno`	TEXT,
+	`name`	TEXT,
+	`Address`	TEXT,
+	`Course`	TEXT,
+	`nextFD`	Date,
+	`admsnFD`	Date,
+	`Fee`	INTEGER,
+	PRIMARY KEY(`phnno`)
+);
+
+FeesT Table
+CREATE TABLE `FeesT` (
+	`tran`	TEXT,
+	`Date`	Date,
+	`Cost`	INTEGER,
+	`Name`	TEXT
+);
+
+Attendence Table
+CREATE TABLE `attendence` ( `Name` TEXT, `attDate` DATE, `Course` TEXT )
+
+Expenditure Table
+CREATE TABLE `expenditure` ( `Date` DATE, `Expense` TEXT, `cost` INTEGER )

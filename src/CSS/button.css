@@ -1,0 +1,18 @@
+.button{
+    -fx-background-color:#2196F3;
+    -fx-text-fill: white;
+    -fx-font-size:14px;
+}
+
+.button:hover{
+    -fx-border-color: white;
+    -fx-border-width: 2px;
+}
+
+#Click{
+    -fx-background-color:whitesmoke;
+    -fx-font-size:11px;
+    -fx-text-fill: black;
+    -fx-font-family: Verdana;
+    
+}

@@ -1,0 +1,48 @@
+.date-picker{
+    -fx-background-color: #151928;
+}
+
+.date-picker .text-field{
+    -fx-background-color: #151928;
+}
+
+.date-picker .button{
+    -fx-background-color: red; /*use navy blue here*/
+    -fx-border-color: black;
+}
+
+.date-picker:hover {
+    -fx-background-color: #39CCCC;
+}
+
+.date-picker .button:hover{
+    -fx-background-color:#ff3333;
+}
+
+
+.date-picker .arrow{
+    -fx-background-color: black;
+}
+
+.date-picker .calendar{
+    -fx-background-color: black;
+}
+.date-picker .cell{
+    -fx-background-color: #001f3f;
+    -fx-border-color: #DDDDDD;
+    -fx-text-fill: white;
+}
+
+.date-picker .cell:hover{
+    -fx-text-fill:black;
+    -fx-border-radius:0px;
+    -fx-background-color: #DDDDDD;
+}
+
+.calendar{
+    -fx-background-color: black;
+}
+
+.date-picker .label{
+    -fx-text-fill: black; 
+}

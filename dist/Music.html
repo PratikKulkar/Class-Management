@@ -1,0 +1,45 @@
+<html><head>
+  <SCRIPT src="./web-files/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'Music.jnlp',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxqbmxwIHNwZWM9IjEuMCIgeG1sbnM6amZ4PSJodHRwOi8vamF2YWZ4LmNvbSIgaHJlZj0iTXVzaWMuam5scCI+DQogIDxpbmZvcm1hdGlvbj4NCiAgICA8dGl0bGU+TXVzaWM8L3RpdGxlPg0KICAgIDx2ZW5kb3I+cm9vdDwvdmVuZG9yPg0KICAgIDxkZXNjcmlwdGlvbj5udWxsPC9kZXNjcmlwdGlvbj4NCiAgICA8b2ZmbGluZS1hbGxvd2VkLz4NCiAgPC9pbmZvcm1hdGlvbj4NCiAgPHJlc291cmNlcz4NCiAgICA8ajJzZSB2ZXJzaW9uPSIxLjYrIiBocmVmPSJodHRwOi8vamF2YS5zdW4uY29tL3Byb2R1Y3RzL2F1dG9kbC9qMnNlIi8+DQogICAgPGphciBocmVmPSJNdXNpYy5qYXIiIHNpemU9IjM3OTE3NSIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXGFjdGl2YXRpb24uamFyIiBzaXplPSI1NjI5MCIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXGJyaWRqLTAuNy4wLmphciIgc2l6ZT0iOTM1OTI5IiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWJcaGFtY3Jlc3QtY29yZS0xLjMuamFyIiBzaXplPSI0NTI4MCIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXGp1bml0LTQuMTIuamFyIiBzaXplPSIzMTY3OTEiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgICA8amFyIGhyZWY9ImxpYlxtYWlsLmphciIgc2l6ZT0iNTA3ODQ5IiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWJcb3JnLW5ldGJlYW5zLW1vZHVsZXMtamF2YS1qMnNlcHJvamVjdC1jb3B5bGlic3Rhc2suamFyIiBzaXplPSIyNjcxNiIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXHNsZjRqLWFwaS0xLjcuMi5qYXIiIHNpemU9IjI2MDgzIiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWJcc3FsaXRlLWpkYmMtMy4xOS4zLmphciIgc2l6ZT0iNjIxMzY3MCIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXHdlYmNhbS1jYXB0dXJlLTAuMy4xMi5qYXIiIHNpemU9IjQyODMxNCIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICA8L3Jlc291cmNlcz4NCiAgPGFwcGxldC1kZXNjICB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgbWFpbi1jbGFzcz0iY29tLmphdmFmeC5tYWluLk5vSmF2YUZYRmFsbGJhY2siICBuYW1lPSJNdXNpYyIgPg0KICAgIDxwYXJhbSBuYW1lPSJyZXF1aXJlZEZYVmVyc2lvbiIgdmFsdWU9IjguMCsiLz4NCiAgPC9hcHBsZXQtZGVzYz4NCiAgPGpmeDpqYXZhZngtZGVzYyAgd2lkdGg9IjgwMCIgaGVpZ2h0PSI2MDAiIG1haW4tY2xhc3M9Im11c2ljLk1haW4iICBuYW1lPSJNdXNpYyIgLz4NCiAgPHVwZGF0ZSBjaGVjaz0iYWx3YXlzIi8+DQo8L2pubHA+DQo='
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbedmusic() {
+        dtjava.embed(
+            {
+                id : 'music',
+                url : 'Music.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '800',
+                height : '600',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxqbmxwIHNwZWM9IjEuMCIgeG1sbnM6amZ4PSJodHRwOi8vamF2YWZ4LmNvbSIgaHJlZj0iTXVzaWMuam5scCI+DQogIDxpbmZvcm1hdGlvbj4NCiAgICA8dGl0bGU+TXVzaWM8L3RpdGxlPg0KICAgIDx2ZW5kb3I+cm9vdDwvdmVuZG9yPg0KICAgIDxkZXNjcmlwdGlvbj5udWxsPC9kZXNjcmlwdGlvbj4NCiAgICA8b2ZmbGluZS1hbGxvd2VkLz4NCiAgPC9pbmZvcm1hdGlvbj4NCiAgPHJlc291cmNlcz4NCiAgICA8ajJzZSB2ZXJzaW9uPSIxLjYrIiBocmVmPSJodHRwOi8vamF2YS5zdW4uY29tL3Byb2R1Y3RzL2F1dG9kbC9qMnNlIi8+DQogICAgPGphciBocmVmPSJNdXNpYy5qYXIiIHNpemU9IjM3OTE3NSIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXGFjdGl2YXRpb24uamFyIiBzaXplPSI1NjI5MCIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXGJyaWRqLTAuNy4wLmphciIgc2l6ZT0iOTM1OTI5IiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWJcaGFtY3Jlc3QtY29yZS0xLjMuamFyIiBzaXplPSI0NTI4MCIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXGp1bml0LTQuMTIuamFyIiBzaXplPSIzMTY3OTEiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgICA8amFyIGhyZWY9ImxpYlxtYWlsLmphciIgc2l6ZT0iNTA3ODQ5IiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWJcb3JnLW5ldGJlYW5zLW1vZHVsZXMtamF2YS1qMnNlcHJvamVjdC1jb3B5bGlic3Rhc2suamFyIiBzaXplPSIyNjcxNiIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXHNsZjRqLWFwaS0xLjcuMi5qYXIiIHNpemU9IjI2MDgzIiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWJcc3FsaXRlLWpkYmMtMy4xOS4zLmphciIgc2l6ZT0iNjIxMzY3MCIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXHdlYmNhbS1jYXB0dXJlLTAuMy4xMi5qYXIiIHNpemU9IjQyODMxNCIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICA8L3Jlc291cmNlcz4NCiAgPGFwcGxldC1kZXNjICB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgbWFpbi1jbGFzcz0iY29tLmphdmFmeC5tYWluLk5vSmF2YUZYRmFsbGJhY2siICBuYW1lPSJNdXNpYyIgPg0KICAgIDxwYXJhbSBuYW1lPSJyZXF1aXJlZEZYVmVyc2lvbiIgdmFsdWU9IjguMCsiLz4NCiAgPC9hcHBsZXQtZGVzYz4NCiAgPGpmeDpqYXZhZngtZGVzYyAgd2lkdGg9IjgwMCIgaGVpZ2h0PSI2MDAiIG1haW4tY2xhc3M9Im11c2ljLk1haW4iICBuYW1lPSJNdXNpYyIgLz4NCiAgPHVwZGF0ZSBjaGVjaz0iYWx3YXlzIi8+DQo8L2pubHA+DQo='
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedmusic);
+</script>
+
+</head><body>
+<h2>Test page for <b>Music</b></h2>
+  <b>Webstart:</b> <a href='Music.jnlp' onclick="return launchApplication('Music.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>

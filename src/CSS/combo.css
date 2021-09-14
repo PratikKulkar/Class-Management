@@ -1,0 +1,27 @@
+.combo-box{
+    -fx-background-color: #151928;  
+    -fx-font-size:14px;
+}
+
+
+.combo-box .cell{
+    -fx-background-color: #151928;
+    -fx-border-width: 0px;
+    -fx-text-fill: white; /*for filling the text selected in combobox*/
+}
+
+.combo-box .cell:hover{
+    -fx-background-color: #DDDDDD;
+    -fx-text-fill: black;
+}
+
+.combo-box .list-view{
+    -fx-border-radius: 5px;
+    -fx-border-color: #85144b;
+    -fx-border-width: 0.5px;
+}   
+ 
+
+.combo-box-base:hover{
+    -fx-border-color: #39CCCC;
+}

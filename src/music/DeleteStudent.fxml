@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="Anchor" prefHeight="520.0" prefWidth="808.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="music.DeleteStudentController">
+   <children>
+      <TextField fx:id="phnno" layoutX="32.0" layoutY="39.0" />
+      <Button layoutX="220.0" layoutY="39.0" mnemonicParsing="false" onAction="#search" onKeyPressed="#handle" text="Search" />
+      <Label id="otherlab" fx:id="otherlab" layoutX="32.0" layoutY="262.0" prefHeight="15.0" prefWidth="97.0" text="Name" />
+      <Label fx:id="otherlab" layoutX="32.0" layoutY="312.0" text="Phone Number" />
+      <Label fx:id="otherlab" layoutX="431.0" layoutY="136.0" prefHeight="15.0" prefWidth="97.0" text="Address" />
+      <TextField fx:id="Name" layoutX="151.0" layoutY="255.0" prefHeight="25.0" prefWidth="200.0" />
+      <TextField fx:id="phn_no" layoutX="151.0" layoutY="306.0" prefHeight="25.0" prefWidth="200.0" />
+      <TextArea fx:id="add" layoutX="576.0" layoutY="136.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label fx:id="otherlab" layoutX="32.0" layoutY="368.0" prefHeight="15.0" prefWidth="119.0" text="Admission Date" />
+      <Label fx:id="otherlab" layoutX="32.0" layoutY="422.0" prefHeight="15.0" prefWidth="119.0" text="Next Fee Date" />
+      <Label fx:id="otherlab" layoutX="429.0" layoutY="86.0" text="Previous Fee Date" />
+      <DatePicker fx:id="admsnFD" layoutX="152.0" layoutY="361.0" prefHeight="25.0" prefWidth="198.0" />
+      <DatePicker fx:id="nextFD" layoutX="152.0" layoutY="415.0" prefHeight="25.0" prefWidth="198.0" />
+      <DatePicker fx:id="prev_date" layoutX="577.0" layoutY="86.0" prefHeight="25.0" prefWidth="198.0" />
+      <Label fx:id="otherlab" layoutX="429.0" layoutY="359.0" prefHeight="15.0" prefWidth="119.0" text="Course" />
+      <Label fx:id="otherlab" layoutX="429.0" layoutY="407.0" prefHeight="15.0" prefWidth="119.0" text="Total Fees" />
+      <TextField fx:id="course" layoutX="577.0" layoutY="352.0" prefHeight="25.0" prefWidth="198.0" />
+      <TextField fx:id="Fee" layoutX="577.0" layoutY="400.0" prefHeight="25.0" prefWidth="198.0" />
+      <Button fx:id="delete" layoutX="577.0" layoutY="452.0" mnemonicParsing="false" onAction="#delete" onKeyPressed="#handle2" text="Delete" />
+      <MenuBar prefHeight="29.0" prefWidth="825.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="_File">
+               <items>
+                  <MenuItem fx:id="search" mnemonicParsing="false" onAction="#mainMenu" text="Main menu" />
+                  <MenuItem fx:id="search1" mnemonicParsing="false" onAction="#searchF" text="Search" />
+                  <MenuItem fx:id="search2" mnemonicParsing="false" onAction="#send" text="Send Message" />
+                  <MenuItem mnemonicParsing="false" onAction="#att" text="Attendence" />
+                  <MenuItem mnemonicParsing="false" onAction="#expense" text="Expenditure" />
+                  <MenuItem mnemonicParsing="false" onAction="#hide" text="Exit" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="_Edit">
+               <items>
+                  <MenuItem fx:id="payFee" mnemonicParsing="false" onAction="#fees" text="Pay fees" />
+                  <MenuItem fx:id="payFee1" mnemonicParsing="false" onAction="#attS" text="Attendence Search" />
+                  <MenuItem fx:id="payFee11" mnemonicParsing="false" onAction="#trans" text="Transaction Search" />
+                  <MenuItem fx:id="payFee111" mnemonicParsing="false" onAction="#delinfo" text="Delete Information" />
+                  <MenuItem fx:id="payFee1111" mnemonicParsing="false" onAction="#expsearch" text="Expenditure Search" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="_Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Button layoutX="701.0" layoutY="452.0" mnemonicParsing="false" onAction="#update" onKeyPressed="#handle1" text="Update" />
+      <Label id="otherlab" layoutX="32.0" layoutY="116.0" text="Profile Photo" />
+      <ImageView fx:id="image" fitHeight="144.0" fitWidth="176.0" layoutX="151.0" layoutY="86.0" onMouseClicked="#choosePhoto" pickOnBounds="true" preserveRatio="true" />
+   </children>
+   <stylesheets>
+      <URL value="@../CSS/textbox.css" />
+      <URL value="@../CSS/button.css" />
+      <URL value="@../CSS/Menu.css" />
+      <URL value="@../CSS/datepicker.css" />
+      <URL value="@../CSS/label.css" />
+   </stylesheets>
+</AnchorPane>
